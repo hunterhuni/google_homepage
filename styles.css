@@ -1,6 +1,7 @@
 body {
     font-size: 14px;
     font-family: arial,sans-serif;
+    -webkit-appearance: none;
 }
 
 button {
@@ -10,7 +11,7 @@ button {
     color: #3c4043;
     font-family: arial,sans-serif;
     font-size: 14px;
-    margin: 11px 4px;
+    margin: 30px 4px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
@@ -34,6 +35,30 @@ a {
     margin: auto 2.5px;
 }
 
+.button {
+    font-size: 13px;
+    padding: 7px 10px;
+    color: white;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    cursor: pointer;
+}
+
+a img {
+    width: 25px;
+}
+
+a.apps {
+    opacity: 0.55;
+}
+
+a.apps:hover {
+    opacity: 1;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -43,9 +68,6 @@ a:hover {
     padding-top: 150px;
 }
 
-.searchBox {
-}
-
 .searchBox input {
     background: #fff;
     display: flex;
@@ -53,15 +75,41 @@ a:hover {
     box-shadow: none;
     border-radius: 24px;
     height: 44px;
+    font-size: 14px;
     margin: 0 auto;
+    padding: 0px 20px;
     width: 482px;
 }
 
 .searchBox input:hover {
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.searchBox input:focus{
+    outline: none;    
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+ }
+
+.buttonHolder {
+    display: flex;
+    justify-content: center;
 }
 
 .headerNavbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.headerNavbar a {
+    padding-left: 15px;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
 }
 
 .content {
@@ -71,9 +119,25 @@ a:hover {
 }
 
 .footerNavbar {
+    display: flex;
+    justify-content: space-between;
     background-color: #f2f2f2;
-    padding: 10px;
+    padding: 10px 0px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
 }
+
+.footerNavbar a{
+     padding-left: 27px;
+     margin: 0px;
+}
+
+
+.footerNavbar .footerRight {
+    padding-right: 27px;
+}
+
+
+
